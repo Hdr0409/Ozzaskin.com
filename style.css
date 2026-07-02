@@ -1,0 +1,375 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eeeeee;
+  font-family: Lato, sans-serif;
+  box-shadow: none;
+}
+
+.container {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+img {
+  display: block;
+  max-width: 700px;
+}
+
+.poster2 {
+  display: block;
+  width: 625px;
+  height: 900px;
+  aspect-ratio: auto 625 / 835;
+}
+
+.poster3 {
+  display: block;
+  aspect-ratio: auto 625 / 835;
+}
+
+.poster4 {
+  display: block;
+  width: 700px;
+  height: 875px;
+}
+
+.poster5 {
+  display: block;
+  width: 625px;
+  height: 835px;
+  padding-top: 20px;
+}
+.poster6 {
+  display: block;
+  width: 700px;
+  height: 700px;
+}
+
+iframe {
+  display: block;
+  width: 700px;
+  height: 803.333px;
+  border: none;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 4rem;
+  color: rgb(97, 83, 163);
+  display: block;
+  font-size: 37px;
+  font-weight: 400;
+  line-height: 47px;
+}
+
+.harga {
+  text-align: center;
+  margin: 1rem 0;
+  color: black;
+  display: block;
+  font-family: Roboto, sans-serif;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 60px;
+  margin-top: 20px;
+}
+
+.ctwa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  width: 400px;
+  max-width: 700px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 24px;
+  padding-top: 24px;
+
+  background-color: rgb(47, 180, 35);
+  color: white;
+  text-decoration: none;
+  text-align: center;
+
+  font-size: 18px;
+  font-weight: 700;
+  font-family: roboto, sans-serif;
+
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.ctwa:hover {
+  background-color: #1ebe5d;
+  transform: translateY(-2px);
+}
+
+.ctwa i {
+  font-size: 25px;
+}
+
+/* Countdown */
+.timer {
+  text-align: center;
+  box-shadow: none;
+}
+
+.timer > .teks {
+  color: #ff0000;
+  font-size: 16px;
+  font-family: Roboto, sans-serif;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.timer > .countdown {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: none;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  gap: 6px;
+  box-shadow: none;
+}
+
+.angka {
+  width: 60px;
+  height: 60px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 2px solid #ff0000;
+  border-radius: 8px;
+
+  color: #ff0000;
+  font-family: Roboto, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.label {
+  margin-top: 0;
+  color: #ff0000;
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.note {
+  width: 100%;
+  text-align: start;
+  margin-top: 20px;
+  margin: 0;
+  color: #333;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.note2 {
+  width: 100%;
+  background-color: #fff278;
+  margin-top: 30px;
+  padding: 0;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.note2 > h2 {
+  color: red;
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: start;
+  line-height: 1.5rem;
+}
+
+.notes {
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+}
+
+.notes > h2 {
+  color: #f89e00;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: start;
+}
+
+/* --- MODIFIKASI DROPDOWN FAQ --- */
+.notes > .notefromnotes {
+  color: black;
+  font-family: Helvetica, sans-serif;
+  text-align: start;
+  border-bottom: 0.1px solid rgb(234, 234, 234);
+}
+
+.notes > .notefromnotes > .faq-header > span {
+  font-size: 16px;
+  font-family: Helvetica, sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.notes > .notefromnotes > .faq-header > span:hover {
+  text-decoration: underline;
+}
+
+.faq-header {
+  padding: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Jarak antara panah dan teks */
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+/* Mengubah panah menjadi animasi berputar */
+.faq-header i {
+  transition: transform 0.3s ease;
+}
+
+/* Panah akan menunjuk ke bawah saat di-klik (class aktif ditambahkan via JS) */
+.faq-header.aktif i {
+  transform: rotate(90deg);
+}
+
+/* Konten Paragraf bawaannya disembunyikan (tinggi 0 dan transparan) */
+.faq-content {
+  max-height: 0;
+  opacity: 0; /* Tambahan agar teks memiliki efek 'fade in' */
+  overflow: hidden;
+  transition:
+    max-height 0.4s ease-in-out,
+    opacity 0.4s ease-in-out; /* Durasi dan efek transisi diperhalus */
+}
+
+/* Posisi dan desain teks paragraf */
+.faq-content p {
+  margin: 0;
+  padding: 0 15px 15px 35px;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+  font-weight: normal;
+}
+
+/* CATATAN: Class .faq-content.buka sudah dihapus karena kita akan menghitung tingginya lewat JavaScript */
+
+/* Class untuk memunculkan paragraf (ditambahkan via JS) */
+.faq-content.buka {
+  max-height: 500px; /* Batas tinggi maksimal saat terbuka */
+}
+
+/* --- ANIMASI WARNA DROPDOWN --- */
+
+/* 1. Transisi dasar agar saat dibuka/ditutup perubahan warnanya tidak kaku */
+.faq-header span,
+.faq-content p {
+  transition: color 0.3s ease;
+}
+
+/* 2. Mengubah warna teks Judul (span) menjadi ungu saat terbuka */
+.notefromnotes.buka-warna .faq-header span {
+  color: rgb(97, 83, 163);
+}
+
+/* 3. Mengubah warna ikon panah (i) menjadi ungu saat terbuka (Opsional, agar senada) */
+.notefromnotes.buka-warna .faq-header i {
+  color: rgb(97, 83, 163);
+}
+
+/* 4. Mengubah warna teks Paragraf (p) menjadi ungu saat terbuka */
+.notefromnotes.buka-warna .faq-content p {
+  color: rgb(0, 0, 0);
+}
+
+.notefromnotes.buka-warna .faq-content p .faq-content-span {
+  font-weight: bold;
+}
+
+.notes > .notefromnotes > a {
+  color: black;
+  font-size: 16px;
+  font-family: Helvetica, sans-serif;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.ctwa2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  width: 400px;
+  max-width: 700px;
+  padding: 12px 25px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+
+  background-color: rgb(47, 180, 35);
+  color: white;
+  text-decoration: none;
+  text-align: center;
+
+  font-size: 15px;
+  font-weight: 600;
+  font-family: roboto, sans-serif;
+
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+footer {
+  width: 100%;
+  margin-top: 50px;
+  text-align: start;
+  padding: 10px;
+  background-color: #6153a3;
+  padding-top: 100px;
+  padding-bottom: 30px;
+  color: rgba(43, 43, 43, 0.76);
+}
