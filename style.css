@@ -25,9 +25,11 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-img {
+.poster1 {
   display: block;
+  width: 100%; /* Tambahkan baris ini */
   max-width: 700px;
+  height: auto; /* Tambahkan baris ini agar rasio gambar tidak rusak */
 }
 
 .poster2 {
@@ -44,14 +46,15 @@ img {
 
 .poster4 {
   display: block;
-  width: 700px;
+  width: 100%; /* Tambahkan baris ini */
+  max-width: 700px;
   height: 875px;
 }
 
 .poster5 {
   display: block;
   width: 625px;
-  height: 835px;
+  height: auto; /* Tambahkan baris ini agar rasio gambar tidak rusak */
   padding-top: 20px;
 }
 .poster6 {
@@ -62,7 +65,8 @@ img {
 
 iframe {
   display: block;
-  width: 700px;
+  width: 100%; /* Tambahkan baris ini */
+  max-width: 700px;
   height: 803.333px;
   border: none;
 }
