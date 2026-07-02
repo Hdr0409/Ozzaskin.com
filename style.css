@@ -23,13 +23,17 @@ body {
   background-color: #ffffff;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  /* --- TAMBAHKAN 3 BARIS INI --- */
+  width: 100%;
+  max-width: 700px; /* Menyamakan lebar container dengan lebar maksimal poster */
+  overflow: hidden; /* Memotong ujung tajam poster1 agar sudut melengkung container tetap terlihat */
 }
 
 .poster1 {
   display: block;
-  width: 100%; /* Tambahkan baris ini */
-  max-width: 700px;
-  height: auto; /* Tambahkan baris ini agar rasio gambar tidak rusak */
+  width: 100%; /* Memaksa gambar merentang penuh menempel pinggir container */
+  height: auto;
 }
 
 .poster2 {
@@ -46,9 +50,8 @@ body {
 
 .poster4 {
   display: block;
-  width: 100%; /* Tambahkan baris ini */
-  max-width: 700px;
-  height: 875px;
+  width: 100%;
+  height: auto;
 }
 
 .poster5 {
@@ -59,15 +62,15 @@ body {
 }
 .poster6 {
   display: block;
-  width: 700px;
-  height: 700px;
+  width: 100%;
+  height: auto;
 }
 
 iframe {
   display: block;
-  width: 100%; /* Tambahkan baris ini */
-  max-width: 700px;
+  width: 100%;
   height: 803.333px;
+  aspect-ratio: 315 / 560; /* Gunakan aspect-ratio agar proporsi video tetap pas */
   border: none;
 }
 
